@@ -1,0 +1,340 @@
+{
+  "agents": [
+    {
+      "agent_id": "agent-001-dr-sameer",
+      "name": "Dr. Sameer",
+      "role": "triage",
+      "organization": "sehat-saathi-patient-side",
+      "capabilities": [
+        "symptom_assessment",
+        "urgency_determination",
+        "emergency_escalation"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.311808"
+    },
+    {
+      "agent_id": "agent-002-guide",
+      "name": "Guide",
+      "role": "navigation",
+      "organization": "sehat-saathi-patient-side",
+      "capabilities": [
+        "find_hospitals",
+        "book_appointment",
+        "navigate",
+        "coordinate_with_schedulers"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.311857"
+    },
+    {
+      "agent_id": "agent-003-haqdar",
+      "name": "Haqdar",
+      "role": "eligibility",
+      "organization": "sehat-saathi-patient-side",
+      "capabilities": [
+        "verify_insurance",
+        "check_coverage",
+        "pre_authorize",
+        "find_subsidized_care"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.311884"
+    },
+    {
+      "agent_id": "agent-004-yaadgar",
+      "name": "Yaadgar",
+      "role": "medication",
+      "organization": "sehat-saathi-patient-side",
+      "capabilities": [
+        "medication_reminders",
+        "pharmacy_search",
+        "price_comparison",
+        "drug_interaction_check"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.311906"
+    },
+    {
+      "agent_id": "agent-005-khandan",
+      "name": "Khandan",
+      "role": "family",
+      "organization": "sehat-saathi-patient-side",
+      "capabilities": [
+        "family_tracking",
+        "immunization_schedules",
+        "emergency_notifications",
+        "hereditary_risk_assessment"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.311925"
+    },
+    {
+      "agent_id": "agent-006-muhafiz",
+      "name": "Muhafiz",
+      "role": "community",
+      "organization": "sehat-saathi-patient-side",
+      "capabilities": [
+        "disease_surveillance",
+        "outbreak_detection",
+        "community_alerts",
+        "health_campaigns"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.311949"
+    },
+    {
+      "agent_id": "agent-101-scheduler-2211",
+      "name": "Scheduler (Kidney Health And Medical Center)",
+      "role": "scheduler",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "appointment_management",
+        "calendar_optimization",
+        "doctor_scheduling"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326140"
+    },
+    {
+      "agent_id": "agent-102-resource-2211",
+      "name": "Resource (Kidney Health And Medical Center)",
+      "role": "resource",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "resource_tracking",
+        "inventory_management",
+        "allocation_optimization"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326171"
+    },
+    {
+      "agent_id": "agent-103-billing-2211",
+      "name": "Billing (Kidney Health And Medical Center)",
+      "role": "billing",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "insurance_verification",
+        "payment_processing",
+        "claims_management"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326181"
+    },
+    {
+      "agent_id": "agent-104-clinical-2211",
+      "name": "Clinical (Kidney Health And Medical Center)",
+      "role": "clinical",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "results_management",
+        "treatment_coordination",
+        "prescription_management"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326190"
+    },
+    {
+      "agent_id": "agent-105-emergency-2211",
+      "name": "Emergency (Kidney Health And Medical Center)",
+      "role": "emergency",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "emergency_response",
+        "capacity_assessment",
+        "ambulance_coordination"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326198"
+    },
+    {
+      "agent_id": "agent-101-scheduler-2212",
+      "name": "Scheduler (Banaras National Hospital)",
+      "role": "scheduler",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "appointment_management",
+        "calendar_optimization",
+        "doctor_scheduling"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326348"
+    },
+    {
+      "agent_id": "agent-102-resource-2212",
+      "name": "Resource (Banaras National Hospital)",
+      "role": "resource",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "resource_tracking",
+        "inventory_management",
+        "allocation_optimization"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326356"
+    },
+    {
+      "agent_id": "agent-103-billing-2212",
+      "name": "Billing (Banaras National Hospital)",
+      "role": "billing",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "insurance_verification",
+        "payment_processing",
+        "claims_management"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326364"
+    },
+    {
+      "agent_id": "agent-104-clinical-2212",
+      "name": "Clinical (Banaras National Hospital)",
+      "role": "clinical",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "results_management",
+        "treatment_coordination",
+        "prescription_management"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326369"
+    },
+    {
+      "agent_id": "agent-105-emergency-2212",
+      "name": "Emergency (Banaras National Hospital)",
+      "role": "emergency",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "emergency_response",
+        "capacity_assessment",
+        "ambulance_coordination"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326375"
+    },
+    {
+      "agent_id": "agent-101-scheduler-2213",
+      "name": "Scheduler (Dr. Waqas Clinic)",
+      "role": "scheduler",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "appointment_management",
+        "calendar_optimization",
+        "doctor_scheduling"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326748"
+    },
+    {
+      "agent_id": "agent-102-resource-2213",
+      "name": "Resource (Dr. Waqas Clinic)",
+      "role": "resource",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "resource_tracking",
+        "inventory_management",
+        "allocation_optimization"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326761"
+    },
+    {
+      "agent_id": "agent-103-billing-2213",
+      "name": "Billing (Dr. Waqas Clinic)",
+      "role": "billing",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "insurance_verification",
+        "payment_processing",
+        "claims_management"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326769"
+    },
+    {
+      "agent_id": "agent-104-clinical-2213",
+      "name": "Clinical (Dr. Waqas Clinic)",
+      "role": "clinical",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "results_management",
+        "treatment_coordination",
+        "prescription_management"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326778"
+    },
+    {
+      "agent_id": "agent-105-emergency-2213",
+      "name": "Emergency (Dr. Waqas Clinic)",
+      "role": "emergency",
+      "organization": "provider-hospital-side",
+      "capabilities": [
+        "emergency_response",
+        "capacity_assessment",
+        "ambulance_coordination"
+      ],
+      "public_key": null,
+      "status": "active",
+      "registered_at": "2025-11-25T23:28:47.326786"
+    }
+  ],
+  "communications": [
+    {
+      "timestamp": "2025-11-25T23:28:55.563205",
+      "message_id": "b4c666dc-f3e8-46fa-b1bb-90d707cc88f8",
+      "from_agent": "Guide",
+      "to_agent": null,
+      "action": "emergency_request",
+      "priority": "critical",
+      "message_type": "broadcast"
+    },
+    {
+      "timestamp": "2025-11-25T23:29:04.270663",
+      "message_id": "c56e15c4-2014-4314-a7d7-cb9bfb5aa1ed",
+      "from_agent": "Guide",
+      "to_agent": null,
+      "action": "emergency_request",
+      "priority": "critical",
+      "message_type": "broadcast"
+    },
+    {
+      "timestamp": "2025-11-25T23:29:11.295454",
+      "message_id": "fe290f7e-a60d-4857-a861-0297739ad8b2",
+      "from_agent": "Guide",
+      "to_agent": null,
+      "action": "emergency_request",
+      "priority": "critical",
+      "message_type": "broadcast"
+    }
+  ],
+  "stats": {
+    "messages_sent": 3,
+    "messages_received": 3,
+    "broadcasts": 1,
+    "negotiations": 0,
+    "registered_agents": 21,
+    "active_agents": 21
+  }
+}

@@ -1,0 +1,59 @@
+📩 Incoming WhatsApp Message
+   From: whatsapp:+923453299986
+   Message: 2 days
+   Profile: Anas Siddiqui
+📨 Continuing conversation with Dr. Sameer (state: asking_duration)
+   Agent: dr_sameer
+   Response success: True
+📱 Message sent to whatsapp:+923453299986: SM897f0145220cf6bdcf7694fbd210fc7d
+🔊 Audio sent to whatsapp:+923453299986: MMaccb91495b2f02b75c9126d9713b5841
+   Voice sent: True, Text sent: True
+INFO:     3.87.121.81:0 - "POST /webhook/whatsapp HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'delivered', 'SmsSid': 'SM897f0145220cf6bdcf7694fbd210fc7d', 'SmsStatus': 'delivered', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SM897f0145220cf6bdcf7694fbd210fc7d', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     54.83.126.211:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'sent', 'SmsSid': 'SM897f0145220cf6bdcf7694fbd210fc7d', 'SmsStatus': 'sent', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SM897f0145220cf6bdcf7694fbd210fc7d', 'StructuredMessage': 'false', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     3.82.157.154:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'read', 'SmsSid': 'SM897f0145220cf6bdcf7694fbd210fc7d', 'SmsStatus': 'read', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SM897f0145220cf6bdcf7694fbd210fc7d', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     52.55.196.187:0 - "POST /webhook/status HTTP/1.1" 200 OK
+
+📩 Incoming WhatsApp Message
+   From: whatsapp:+923453299986
+   Message: 10
+   Profile: Anas Siddiqui
+📨 Continuing conversation with Dr. Sameer (state: asking_severity)
+   Agent: dr_sameer
+   Response success: True
+📱 Message sent to whatsapp:+923453299986: SM6bc09e742f743c372276ef2d940012c1
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'failed', 'SmsSid': 'MMaccb91495b2f02b75c9126d9713b5841', 'SmsStatus': 'failed', 'ErrorCode': '63019', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'MMaccb91495b2f02b75c9126d9713b5841', 'ErrorMessage': 'Media failed to download', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     107.21.79.141:0 - "POST /webhook/status HTTP/1.1" 200 OK
+🔊 Audio sent to whatsapp:+923453299986: MM645b47772dd32df26c16795a87c54c03
+   Voice sent: True, Text sent: True
+INFO:     13.221.250.132:0 - "POST /webhook/whatsapp HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'sent', 'SmsSid': 'SM6bc09e742f743c372276ef2d940012c1', 'SmsStatus': 'sent', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SM6bc09e742f743c372276ef2d940012c1', 'StructuredMessage': 'false', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     44.211.153.129:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'read', 'SmsSid': 'SM6bc09e742f743c372276ef2d940012c1', 'SmsStatus': 'read', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SM6bc09e742f743c372276ef2d940012c1', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     54.221.42.21:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'delivered', 'SmsSid': 'SM6bc09e742f743c372276ef2d940012c1', 'SmsStatus': 'delivered', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SM6bc09e742f743c372276ef2d940012c1', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     34.207.160.97:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'failed', 'SmsSid': 'MM645b47772dd32df26c16795a87c54c03', 'SmsStatus': 'failed', 'ErrorCode': '63019', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'MM645b47772dd32df26c16795a87c54c03', 'ErrorMessage': 'Media failed to download', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     54.164.132.75:0 - "POST /webhook/status HTTP/1.1" 200 OK
+
+📩 Incoming WhatsApp Message
+   From: whatsapp:+923453299986
+   Message: ye sab horaha ha aur abhi bohat ziada chest pain ha
+   Profile: Anas Siddiqui
+📨 Continuing conversation with Dr. Sameer (state: asking_associated_symptoms)
+   Agent: dr_sameer
+   Response success: True
+📱 Message sent to whatsapp:+923453299986: SMee0f72cf98cfc7a0aa78eb9127ad7b9d
+🔊 Audio sent to whatsapp:+923453299986: MM724c06e7ede1fb38981b8d36cdcf35fc
+   Voice sent: True, Text sent: True
+INFO:     54.164.28.214:0 - "POST /webhook/whatsapp HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'sent', 'SmsSid': 'SMee0f72cf98cfc7a0aa78eb9127ad7b9d', 'SmsStatus': 'sent', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SMee0f72cf98cfc7a0aa78eb9127ad7b9d', 'StructuredMessage': 'false', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     34.226.141.227:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'delivered', 'SmsSid': 'SMee0f72cf98cfc7a0aa78eb9127ad7b9d', 'SmsStatus': 'delivered', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SMee0f72cf98cfc7a0aa78eb9127ad7b9d', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     34.226.209.184:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'read', 'SmsSid': 'SMee0f72cf98cfc7a0aa78eb9127ad7b9d', 'SmsStatus': 'read', 'ChannelInstallSid': 'XE0c493e53034ae4d3ca13064085af8595', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'SMee0f72cf98cfc7a0aa78eb9127ad7b9d', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     34.227.229.160:0 - "POST /webhook/status HTTP/1.1" 200 OK
+📊 Status update: {'ChannelPrefix': 'whatsapp', 'ApiVersion': '2010-04-01', 'MessageStatus': 'failed', 'SmsSid': 'MM724c06e7ede1fb38981b8d36cdcf35fc', 'SmsStatus': 'failed', 'ErrorCode': '63019', 'To': 'whatsapp:+923453299986', 'From': 'whatsapp:+14155238886', 'MessageSid': 'MM724c06e7ede1fb38981b8d36cdcf35fc', 'ErrorMessage': 'Media failed to download', 'AccountSid': 'AC1eb59f08014534859bd5cdb5b6339e6c', 'ChannelToAddress': '+92345329XXXX'}
+INFO:     44.206.233.164:0 - "POST /webhook/status HTTP/1.1" 200 OK

@@ -1,0 +1,169 @@
+20:28:59 | INFO     | {"timestamp": "2025-11-27T20:28:59.292209", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_RESULT", "category": "location", "action": "resolve_location", "message": "✗ resolve_location", "data": {"result_summary": "Could not resolve location", "success": false}, "duration_ms": null, "parent_id": null, "log_id": "20251127202859292213"}
+✓ [LocationResolver] resolve_location completed
+   └─ Could not resolve location
+
+🤖 Agent Response:
+
+   🏥 *Hospital Search - Sehat Saathi*
+   
+   I'll help you find hospitals near you!
+   
+   *Please share your location:*
+   
+   📍 *Option 1:* Share WhatsApp location
+      (Tap + → Location → Share Live Location)
+   
+   📍 *Option 2:* Type your area and city
+      Example: "Gulistan-e-Jauhar, Karachi"
+      Example: "DHA Phase 5, Lahore"
+      Example: "F-8, Islamabad"
+   
+   _Aap ka area batayein taake qareeb ke hospital dhund sakein_
+
+   [State: awaiting_location]
+--------------------------------------------------
+
+👤 You (Guide): find hopsital near gulshan e iqbal Karachi
+
+--------------------------------------------------
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.099729", "session_id": "+92-TEST-202837", "agent_name": "Guide", "level": "USER_INPUT", "category": "routing", "action": "user_message", "message": "find hopsital near gulshan e iqbal Karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236099759"}
+👤 [2837] find hopsital near gulshan e iqbal Karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100012", "session_id": "+92-TEST-202837", "agent_name": "Guide", "level": "REASONING", "category": "routing", "action": "reasoning", "message": "Processing message in state: awaiting_location", "data": {"state": "awaiting_location", "has_context": false, "has_coords": false}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100020"}
+💭 [Guide] Processing message in state: awaiting_location
+   └─ state: awaiting_location
+   └─ has_context: False
+   └─ has_coords: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100176", "session_id": "+92-TEST-202837", "agent_name": "Guide", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Attempting to resolve location from text: 'find hopsital near gulshan e iqbal Karachi'", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100186"}
+💭 [Guide] Attempting to resolve location from text: 'find hopsital near gulshan e iqbal Karachi'
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100302", "session_id": "+92-TEST-202837", "agent_name": "LocationResolver", "level": "TOOL_CALL", "category": "location", "action": "resolve_location", "message": "Calling resolve_location", "data": {"inputs": {"location_text": "find hopsital near gulshan e iqbal Karachi", "city_hint": null, "has_coords": false}}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100307"}
+🔧 [LocationResolver] TOOL: resolve_location
+   └─ location_text: find hopsital near gulshan e iqbal Karachi
+   └─ city_hint: None
+   └─ has_coords: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100438", "session_id": "+92-TEST-202837", "agent_name": "LocationResolver", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Analyzing location text: 'find hopsital near gulshan e iqbal Karachi' → Extracted city: karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100442"}
+💭 [LocationResolver] Analyzing location text: 'find hopsital near gulshan e iqbal Karachi' → Extracted city: karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100540", "session_id": "+92-TEST-202837", "agent_name": "LocationResolver", "level": "TOOL_RESULT", "category": "location", "action": "resolve_location", "message": "✓ resolve_location", "data": {"result_summary": "Matched known area: Gulshan E Iqbal, karachi", "success": true, "lat": 24.92, "long": 67.09, "confidence": "high"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100545"}
+✓ [LocationResolver] resolve_location completed
+   └─ Matched known area: Gulshan E Iqbal, karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100622", "session_id": "+92-TEST-202837", "agent_name": "Guide", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Location resolved: Gulshan E Iqbal (confidence: high)", "data": {"lat": 24.92, "long": 67.09, "city": "Karachi", "source": "known_area"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100626"}
+💭 [Guide] Location resolved: Gulshan E Iqbal (confidence: high)
+   └─ lat: 24.92
+   └─ long: 67.09
+   └─ city: Karachi
+   └─ source: known_area
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100711", "session_id": "+92-TEST-202837", "agent_name": "Guide", "level": "REASONING", "category": "hospital", "action": "reasoning", "message": "Initiating hospital search. Urgency: MODERATE, Specialty: General", "data": {"lat": 24.92, "long": 67.09, "city": "Karachi", "max_distance": 15.0, "requires_emergency": false}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100741"}
+💭 [Guide] Initiating hospital search. Urgency: MODERATE, Specialty: General
+   └─ lat: 24.92
+   └─ long: 67.09
+   └─ city: Karachi
+   └─ max_distance: 15.0
+   └─ requires_emergency: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.100940", "session_id": "+92-TEST-202837", "agent_name": "HospitalSearch", "level": "TOOL_CALL", "category": "hospital", "action": "search_hospitals", "message": "Calling search_hospitals", "data": {"inputs": {"lat": 24.92, "long": 67.09, "city": "Karachi", "area": null, "max_distance_km": 15.0, "specialty": null, "requires_emergency": false}}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236100948"}
+🔧 [HospitalSearch] TOOL: search_hospitals
+   └─ lat: 24.92
+   └─ long: 67.09
+   └─ city: Karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.101063", "session_id": "+92-TEST-202837", "agent_name": "HospitalSearch", "level": "REASONING", "category": "hospital", "action": "reasoning", "message": "Searching hospitals within 15.0km of (24.9200, 67.0900) in Karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236101067"}
+💭 [HospitalSearch] Searching hospitals within 15.0km of (24.9200, 67.0900) in Karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.102499", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_CALL", "category": "location", "action": "resolve_location", "message": "Calling resolve_location", "data": {"inputs": {"location_text": "Opposite Police Station Defence A On Ghazi Road, Karachi", "city_hint": "Karachi", "has_coords": false}}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236102510"}
+🔧 [LocationResolver] TOOL: resolve_location
+   └─ location_text: Opposite Police Station Defence A On Ghazi Road, Karachi
+   └─ city_hint: Karachi
+   └─ has_coords: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.102661", "session_id": "system", "agent_name": "LocationResolver", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Analyzing location text: 'Opposite Police Station Defence A On Ghazi Road, Karachi' → Extracted city: karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236102668"}
+💭 [LocationResolver] Analyzing location text: 'Opposite Police Station Defence A On Ghazi Road, Karachi' → Extracted city: karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.102793", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_RESULT", "category": "location", "action": "resolve_location", "message": "✓ resolve_location", "data": {"result_summary": "Matched known area: Defence, karachi", "success": true, "lat": 24.8, "long": 67.05, "confidence": "high"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236102798"}
+✓ [LocationResolver] resolve_location completed
+   └─ Matched known area: Defence, karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103025", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_CALL", "category": "location", "action": "resolve_location", "message": "Calling resolve_location", "data": {"inputs": {"location_text": "Civil Lines, Karachi", "city_hint": "Karachi", "has_coords": false}}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103031"}
+🔧 [LocationResolver] TOOL: resolve_location
+   └─ location_text: Civil Lines, Karachi
+   └─ city_hint: Karachi
+   └─ has_coords: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103133", "session_id": "system", "agent_name": "LocationResolver", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103137"}
+💭 [LocationResolver] Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103295", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_RESULT", "category": "location", "action": "resolve_location", "message": "✓ resolve_location", "data": {"result_summary": "Using city center fallback for karachi", "success": true, "lat": 24.8607, "long": 67.0011, "confidence": "low"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103299"}
+✓ [LocationResolver] resolve_location completed
+   └─ Using city center fallback for karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103515", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_CALL", "category": "location", "action": "resolve_location", "message": "Calling resolve_location", "data": {"inputs": {"location_text": "Civil Lines, Karachi", "city_hint": "Karachi", "has_coords": false}}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103521"}
+🔧 [LocationResolver] TOOL: resolve_location
+   └─ location_text: Civil Lines, Karachi
+   └─ city_hint: Karachi
+   └─ has_coords: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103616", "session_id": "system", "agent_name": "LocationResolver", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103620"}
+💭 [LocationResolver] Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103717", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_RESULT", "category": "location", "action": "resolve_location", "message": "✓ resolve_location", "data": {"result_summary": "Using city center fallback for karachi", "success": true, "lat": 24.8607, "long": 67.0011, "confidence": "low"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103721"}
+✓ [LocationResolver] resolve_location completed
+   └─ Using city center fallback for karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103891", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_CALL", "category": "location", "action": "resolve_location", "message": "Calling resolve_location", "data": {"inputs": {"location_text": "Civil Lines, Karachi", "city_hint": "Karachi", "has_coords": false}}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103897"}
+🔧 [LocationResolver] TOOL: resolve_location
+   └─ location_text: Civil Lines, Karachi
+   └─ city_hint: Karachi
+   └─ has_coords: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.103995", "session_id": "system", "agent_name": "LocationResolver", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236103999"}
+💭 [LocationResolver] Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.104091", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_RESULT", "category": "location", "action": "resolve_location", "message": "✓ resolve_location", "data": {"result_summary": "Using city center fallback for karachi", "success": true, "lat": 24.8607, "long": 67.0011, "confidence": "low"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236104096"}
+✓ [LocationResolver] resolve_location completed
+   └─ Using city center fallback for karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.104255", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_CALL", "category": "location", "action": "resolve_location", "message": "Calling resolve_location", "data": {"inputs": {"location_text": "Civil Lines, Karachi", "city_hint": "Karachi", "has_coords": false}}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236104260"}
+🔧 [LocationResolver] TOOL: resolve_location
+   └─ location_text: Civil Lines, Karachi
+   └─ city_hint: Karachi
+   └─ has_coords: False
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.104356", "session_id": "system", "agent_name": "LocationResolver", "level": "REASONING", "category": "location", "action": "reasoning", "message": "Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi", "data": {}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236104361"}
+💭 [LocationResolver] Analyzing location text: 'Civil Lines, Karachi' → Extracted city: karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.104457", "session_id": "system", "agent_name": "LocationResolver", "level": "TOOL_RESULT", "category": "location", "action": "resolve_location", "message": "✓ resolve_location", "data": {"result_summary": "Using city center fallback for karachi", "success": true, "lat": 24.8607, "long": 67.0011, "confidence": "low"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236104460"}
+✓ [LocationResolver] resolve_location completed
+   └─ Using city center fallback for karachi
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.157230", "session_id": "+92-TEST-202837", "agent_name": "HospitalSearch", "level": "TOOL_RESULT", "category": "hospital", "action": "search_hospitals", "message": "✓ search_hospitals", "data": {"result_summary": "Found 5 hospitals. Nearest: Banaras National Hospital (11.1km)", "success": true, "total_found": 5, "hospitals": [{"name": "Banaras National Hospital", "distance_km": 11.130442296366686, "city": "Karachi"}, {"name": "Dr. Waqas Clinic", "distance_km": 11.130442296366686, "city": "Karachi"}, {"name": "Karachi Club Hospital", "distance_km": 11.130442296366686, "city": "Karachi"}]}, "duration_ms": 56.159, "parent_id": "20251127203236100948", "log_id": "20251127203236157246"}
+✓ [HospitalSearch] search_hospitals completed (56ms)
+   └─ Found 5 hospitals. Nearest: Banaras National Hospital (11.1km)
+20:32:36 | INFO     | {"timestamp": "2025-11-27T20:32:36.157642", "session_id": "+92-TEST-202837", "agent_name": "Guide", "level": "AGENT_OUTPUT", "category": "agent", "action": "response", "message": "Showing 5 hospitals near Karachi", "data": {"response_type": "hospital_results"}, "duration_ms": null, "parent_id": null, "log_id": "20251127203236157649"}
+🤖 [Guide] Showing 5 hospitals near Karachi
+
+🤖 Agent Response:
+
+   🏥 *Nearest Hospitals:*
+   
+   *1. Banaras National Hospital*
+      📍 Civil Lines, Karachi
+      🚗 *11.1 km* door
+      📞 (021) 36691684
+      🚨Emergency
+      🗺️ [Open in Maps](https://www.google.com/maps/search/?api=1&query=24.8607,67.0011)
+   
+   *2. Dr. Waqas Clinic*
+      📍 Civil Lines, Karachi
+      🚗 *11.1 km* door
+      📞 3442023359
+      🗺️ [Open in Maps](https://www.google.com/maps/search/?api=1&query=24.8607,67.0011)
+   
+   *3. Karachi Club Hospital*
+      📍 Civil Lines, Karachi
+      🚗 *11.1 km* door
+      📞 3232676620
+      🚨Emergency
+      🗺️ [Open in Maps](https://www.google.com/maps/search/?api=1&query=24.8607,67.0011)
+   
+   *4. Karachi Gymkhana Hospital*
+      📍 Civil Lines, Karachi
+      🚗 *11.1 km* door
+      📞 3232676620
+      🚨Emergency
+      🗺️ [Open in Maps](https://www.google.com/maps/search/?api=1&query=24.8607,67.0011)
+   
+   *5. Qureshi Ent Medical Centre*
+      📍 0, Karachi
+      🚗 *11.1 km* door
+      📞 042-32591427
+      🚨Emergency 🏥ICU
+      🗺️ [Open in Maps](https://www.google.com/maps/search/?api=1&query=24.8607,67.0011)
+   
+   
+   *Reply with:*
+   1️⃣ - 5️⃣  Get directions to hospital
+   📍 Send new location to search again
+   "book" - Book appointment
+
+   [State: showing_results]
+--------------------------------------------------
